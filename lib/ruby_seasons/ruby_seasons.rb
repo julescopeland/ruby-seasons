@@ -1,7 +1,7 @@
 require 'csv'
 module RubySeasons
   module ClassMethods
-    @@lookup_file = File.expand_path('lib/lookup_tables/london_seasons.csv')
+    @@lookup_file = File.expand_path('../../lookup_tables/london_seasons.csv', __FILE__)
 
     def season_lookup_table
       @@season_lookup_table ||= get_season_lookup_table
