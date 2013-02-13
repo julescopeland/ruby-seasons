@@ -1,6 +1,18 @@
 = ruby-seasons
 
-Description goes here.
+`ruby-seasons` is a small gem that adds some methods to Date and DateTime objects in Ruby.
+
+For a given date object, call `.season` on it, and it will return the season as a string.
+
+For a parsible date string, use Date.get_season('2013/05/28') to return the season as a string.
+
+The seasons are currently calculated from a lookup table pilfered from here: http://www.timeanddate.com/calendar/seasons.html
+
+These are accurate for London, and only support 1900-2100
+
+TODO: figure out how to calculate dates and times from a given location
+
+TODO: add support for locale translations.
 
 == Contributing to ruby-seasons
  

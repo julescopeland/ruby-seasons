@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 require 'rubygems'
 require 'bundler'
 begin
@@ -17,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "ruby-seasons"
   gem.homepage = "http://github.com/julescopeland/ruby-seasons"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Get the season name from a date or datetime object}
+  gem.description = %Q{Adds methods to Date and DateTime objects that returns the season as a string. Currently only accurately supports London from 1900-2100}
   gem.email = "jules@julescopeland.com"
   gem.authors = ["Jules Copeland"]
   # dependencies defined in Gemfile
