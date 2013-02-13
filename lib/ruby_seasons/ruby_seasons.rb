@@ -10,11 +10,11 @@ module RubySeasons
     def get_season(date)
       datetime = date.class == DateTime ? date : DateTime.parse(date.to_s)
       year = datetime.strftime('%Y')
-      if (@@season_lookup_table[year][:spring_start]..@@season_lookup_table[year][:summer_start]).cover?(datetime)
+      if (season_lookup_table[year][:spring_start]..season_lookup_table[year][:summer_start]).cover?(datetime)
         'spring'
-      elsif (@@season_lookup_table[year][:summer_start]..@@season_lookup_table[year][:autumn_start]).cover?(datetime)
+      elsif (season_lookup_table[year][:summer_start]..season_lookup_table[year][:autumn_start]).cover?(datetime)
         'summer'
-      elsif (@@season_lookup_table[year][:autumn_start]..@@season_lookup_table[year][:winter_start]).cover?(datetime)
+      elsif (season_lookup_table[year][:autumn_start]..season_lookup_table[year][:winter_start]).cover?(datetime)
         'autumn'
       else
         'winter'
