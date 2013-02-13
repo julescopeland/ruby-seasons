@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "ruby-seasons"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jules Copeland"]
@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
     "lib/lookup_tables/london_seasons.csv",
     "lib/ruby-seasons.rb",
     "lib/ruby_seasons/ruby_seasons.rb",
+    "ruby-seasons.gemspec",
     "spec/lib/ruby_seasons/ruby_seasons_spec.rb",
     "spec/ruby-seasons_spec.rb",
     "spec/spec_helper.rb"
